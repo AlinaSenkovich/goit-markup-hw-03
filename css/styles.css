@@ -128,7 +128,6 @@ margin-left: auto;
 .title-text-hero {
     display: inline-block;
     width: 696px;
-    height: 120px;
     text-align: center;    
 }
 .btn-studio {
@@ -188,7 +187,6 @@ margin-left: auto;
 }
 .title-item {
     width: 270px;
-    height: 101px;
 }
 .title-item:not(:last-child) {
 margin-right: 30px;
@@ -300,8 +298,10 @@ margin-right: 8px;
     flex-basis: calc((100% - 66px)/3);
     margin-right: 25px;
     margin-bottom: 30px;
-    border: 1px solid #EEEEEE;
     box-sizing: border-box;
+}
+.portfolio-text {
+    border: 1px solid #EEEEEE;
 }
 .portfolio-content-item:nth-child(3n) {
 margin-right: 0;
@@ -333,7 +333,6 @@ margin-right: 0;
 }
 .address-footer-list {
     width: 231px;
-    height: 81px;
 }
 .address-footer-item:not(:last-child) {
 margin-bottom: 9px;
