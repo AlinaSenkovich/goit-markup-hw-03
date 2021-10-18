@@ -105,15 +105,14 @@ margin-left: auto;
 }
 /*Содержимое*/
 .hero-conteiner {
+    text-align: center;
+}
+.section-title {
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: #2F303A;
-    text-align: center;
 }
-/*.section-title {
-    background-color: #2F303A;
-    width: 1200px;
-}*/
+
 .hero-pre-title {
     margin-bottom: 30px;    
 }
@@ -141,7 +140,7 @@ margin-left: auto;
 .btn-light{
     color: var(--header-color);
 }
-.btn-studio:hover, .btn-studio:focus {
+.btn-studio {
     color: var(--primary-title-color);
     background-color: var(--accent-color);
 }
@@ -249,9 +248,6 @@ margin-right: 30px;
 .team-item:not(:last-child) {
     margin-right: 30px;
 }
-.title-menu {
-    margin-bottom: 50px;
-}
 .title-menu-name {
     font-weight: 500;
     font-size: 16px;
@@ -259,7 +255,6 @@ margin-right: 30px;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 .pre-title-name {
@@ -269,25 +264,26 @@ margin-right: 30px;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--second-text-color);
-    margin-bottom: 30px;
+}
+.team-title {
+   padding-top: 30px; 
+   padding-bottom: 30px;
 }
 /*portfolio*/
-.conteiner-menu-portfolio {
-    display: flex;
-    margin-bottom: 34px;
+.section-portfolio {
+ padding-top: 94px;
+ padding-bottom: 94px;   
 }
 .menu-portfolio-list {
     display: flex;
-    
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 50px;
 }
 .menu-portfolio:not(:last-child) {
 margin-right: 8px;
 }
-.menu-portfolio-section {
-    padding-top: 94px;
-    text-align: center;
-    justify-content: center;
-}
+
 .portfolio-content-list {
     display: flex;
     flex-wrap: wrap;
@@ -295,16 +291,22 @@ margin-right: 8px;
 
 }
 .portfolio-content-item {
-    flex-basis: calc((100% - 66px)/3);
-    margin-right: 25px;
+    flex-basis: calc((100% - 90px) / 3);
+    margin-right: 30px;
     margin-bottom: 30px;
     box-sizing: border-box;
 }
 .portfolio-text {
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-bottom: 20px;
     border: 1px solid #EEEEEE;
 }
 .portfolio-content-item:nth-child(3n) {
 margin-right: 0;
+}
+.portfolio-content-item:nth-child(n + 6) {
+    margin-bottom: 0;
 }
 .title-portfolio {
     font-weight: 700;
@@ -312,9 +314,7 @@ margin-right: 0;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--primary-text-color);
-    margin-top: 20px;
     margin-bottom: 4px;
-    padding-left: 24px;
     }
 .pre-title-portfolio-text {
     font-weight: 400;
@@ -322,8 +322,6 @@ margin-right: 0;
     line-height: 1.9;
     letter-spacing: 0.03em;
     color: var(--second-text-color);
-    padding-bottom: 20px;
-    padding-left: 24px;
     }
 /*footer*/
 .footer {
